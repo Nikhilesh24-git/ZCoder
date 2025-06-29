@@ -1,0 +1,67 @@
+/* Header.css */
+
+.header {
+  width: 100%;
+  font-size: 21px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
+  padding: 5px 20px;
+
+  background-color: #EAE7DD;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.header.scrolled {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a.active {
+  color: #007bff;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 30px;
+}
+
+.icon-link img {
+  height: 44px;
+  width:  44px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+.icon-link img:hover {
+  opacity: 0.7;
+}
